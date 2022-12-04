@@ -13,4 +13,27 @@ public class PageController {
 		return model;
 	}
 	
+	@GetMapping("/dashboard")
+	public ModelAndView dashboard() {
+		ModelAndView model = new ModelAndView("dashboard");
+		return model;
+	}
+	
+	@GetMapping("/inferensi")
+	public ModelAndView inferensi() {
+		ModelAndView model = new ModelAndView("inferensi");
+		return model;
+	}
+	
+	@GetMapping("/acquisition")
+	public ModelAndView acquisition() {
+		ModelAndView model = new ModelAndView("knowledge_acquisition");
+		return model;
+	}
+	
+	@GetMapping("/representation")
+	public ModelAndView representation() {
+		ModelAndView model = new ModelAndView("knowledge_representation");
+		return model;
+	}
 }
