@@ -99,6 +99,6 @@ public class ID3Utils {
 		if(x == 0) {
 			return 0.0;
 		}
-		return (x * Math.log(x) / Math.log(2));
+		return (-1 * x * Math.log(x) / Math.log(2));
 	}
 }

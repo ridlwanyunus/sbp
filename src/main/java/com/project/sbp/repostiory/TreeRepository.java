@@ -15,4 +15,7 @@ public interface TreeRepository extends JpaRepository<Tree, Integer> {
 	@Query("select t from Tree t where t.node = :node")
 	public List<Tree> findByNode(@Param("node") String node);
 	
+	@Query("select t from Tree t where t.child = :child")
+	public Tree findFeatureByNode(@Param("child") String child);
+	
 }

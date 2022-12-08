@@ -86,5 +86,18 @@ public class ExampleController {
 		return map;
 	}
 	
+	@GetMapping("dataset")
+	public List<Dataset> dataset(@RequestParam("feature")String feature, @RequestParam("node") String node){
+		Node tmpFeature= nodeService.findClassifier(feature);
+		String kodeFeature = tmpFeature.getNode();
+		
+		Node tmpNode = nodeService.findClassifier(node);
+		String kodeNode = tmpNode.getNode();
+				
+		List<Feature> features = featureService.findAll();
+		List<Dataset> currentDataset = datasetService.findByNode(feature, kodeNode);
+		return currentDataset;
+	}
+	
 	
 }
