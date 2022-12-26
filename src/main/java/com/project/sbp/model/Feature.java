@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="feature", schema = "sbptestdb")
+@Table(name="feature")
 @Data
 public class Feature {
 
@@ -19,10 +19,7 @@ public class Feature {
 	@Column(name="id_feature")
 	private Integer idFeature;
 	
-	@Column(name="node")
-	private String node;
-	
-	@Column(name="is_used")
-	private Integer isUsed;
-	
+	@Column(name="feature_name")
+	private String featureName;
+
 }

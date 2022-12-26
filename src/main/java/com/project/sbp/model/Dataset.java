@@ -12,7 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="dataset", schema = "sbptestdb")
+@Table(name="dataset")
 @Data
 @Getter
 @Setter
@@ -23,19 +23,21 @@ public class Dataset {
 	@Column(name="id_dataset")
 	private Integer idDataset;
 	
-	@Column(name="outlook")
-	private String outlook;
+	@Column(name="keuangan")
+	private String keuangan;
 	
-	@Column(name="temperature")
-	private String temperature;
+	@Column(name="sikap")
+	private String sikap;
 	
-	@Column(name="humidity")
-	private String humidity;
+	@Column(name="komunikasi")
+	private String komunikasi;
 	
-	@Column(name="wind")
-	private String wind;
+	@Column(name="kecerdasan")
+	private String kecerdasan;
 	
-	@Column(name="tennis")
-	private String tennis;
+	@Column(name="humoris")
+	private String humoris;
 	
+	@Column(name="idaman")
+	private String idaman;
 }
