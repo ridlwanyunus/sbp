@@ -32,4 +32,9 @@ public class ExampleController {
 		return id3Service.createDecisionTree();
 	}
 	
+	@GetMapping("visualize/tree")
+	public ResponseTemplate visualizeTree(){
+		return id3Service.visualizeTreeDate();
+	}
+	
 }
