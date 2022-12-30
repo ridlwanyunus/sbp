@@ -77,13 +77,34 @@
  			}
  		});
  		
-
+		
  		
  	}
- 
+ 	
+ 	var buttonHandler = function(){
+		$('#btn-calculate').on('click', function(e){
+			console.log('recalculate');
+			$.ajax({
+	 			url: "example/decision/tree",
+	 			type: "GET",
+	 			contentType: "application/json",
+	 			success: function(response){
+	 				swal.fire("Success!", "Success Recalculate Graph", "success");
+	 			},
+	 			error: function(response){
+		 			swal.fire("Error!", "Error Recalculate Graph!", "error");
+	 			},
+	 			complete: function(response) {
+	 				welcome();
+	 			}
+ 			});
+		});	
+	}
+
  	return {
  		init: function(){
  			welcome();
+ 			buttonHandler();
  		}
  	};
  }();
