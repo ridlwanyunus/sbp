@@ -19,7 +19,7 @@
 					//scrollY: '50vh',
 					scrollX: true,
 					scrollCollapse: true,
-					ordering: false,
+					ordering: true,
  					columns: [
  						{"data": "idDataset"},
  						{"data": "keuangan"},
@@ -84,6 +84,24 @@
  	
  	var remove = function(id) {
  		console.log('Remove: ' + id);
+ 		$.ajax({
+			url: '/dataset/delete/'+id,
+			type: 'GET',
+			contentType: 'application/json',
+			success: function(response){
+				console.log(response)
+				if(response.code == '1'){
+					swal.fire("Success!", response.message, "success");
+					refreshTable();
+				}
+				else
+					swal.fire("Error!", response.message, "error");
+				
+			},
+			error: function(response){
+				swal.fire("Error!", "Error add new record", "error");
+			}
+		});
  	}
  	
  	var buttonHandler = function () {
@@ -123,7 +141,6 @@
 		});
 		
 	}
-
  
  	return {
  		init: function(){

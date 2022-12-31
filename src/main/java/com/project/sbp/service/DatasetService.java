@@ -1,6 +1,7 @@
 package com.project.sbp.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,6 +44,29 @@ public class DatasetService {
 			response.setMessage(e.getMessage());
 		}
 		
+		return response;
+	}
+	
+	public ResponseTemplate delete(Integer idDataset) {
+		ResponseTemplate response = new ResponseTemplate();
+		try {
+			Optional<Dataset> dataset = repo.findById(idDataset);
+			if(dataset.isPresent()) {
+				repo.deleteById(idDataset);
+				
+				response.setCode(AppConstant.CODE_SUCCESS);
+				response.setStatus(AppConstant.STATUS_SUCCESS);
+				response.setMessage("Successfully remove record");
+			} else {
+				response.setCode(AppConstant.CODE_ERROR);
+				response.setStatus(AppConstant.STATUS_ERROR);
+				response.setMessage("Record not found");
+			}
+		} catch (Exception e) {
+			response.setCode(AppConstant.CODE_ERROR);
+			response.setStatus(AppConstant.STATUS_ERROR);
+			response.setMessage(e.getMessage());
+		}
 		return response;
 	}
 }
