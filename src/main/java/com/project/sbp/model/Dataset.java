@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Dataset {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_dataset")
 	private Integer idDataset;
 	

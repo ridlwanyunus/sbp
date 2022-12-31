@@ -85,11 +85,50 @@
  	var remove = function(id) {
  		console.log('Remove: ' + id);
  	}
+ 	
+ 	var buttonHandler = function () {
+		$('.btn-save').on('click', function(){
+			var param = {};
+			
+			param.keuangan = $('input[type="radio"][name="rbKeuangan"]:checked').val();
+			param.sikap = $('input[type="radio"][name="rbSikap"]:checked').val();
+			param.komunikasi = $('input[type="radio"][name="rbKomunikasi"]:checked').val();
+			param.kecerdasan = $('input[type="radio"][name="rbKecerdasan"]:checked').val();
+			param.humoris = $('input[type="radio"][name="rbHumoris"]:checked').val();
+			param.idaman = $('input[type="radio"][name="rbIdaman"]:checked').val();
+			saveDataset(param);
+		});
+	}
+	
+	var saveDataset = function(param){
+		
+		$.ajax({
+			url: '/dataset/save',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify(param),
+			success: function(response){
+				console.log(response)
+				if(response.code == '1'){
+					swal.fire("Success!", response.message, "success");
+					refreshTable();
+				}
+				else
+					swal.fire("Error!", response.message, "error");
+				
+			},
+			error: function(response){
+				swal.fire("Error!", "Error add new record", "error");
+			}
+		});
+		
+	}
 
  
  	return {
  		init: function(){
  			refreshTable();
+ 			buttonHandler();
  		}
  	};
  }();
