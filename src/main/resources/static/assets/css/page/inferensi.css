@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+
+#question-one {
+	display: none;
+}
+
+#question-two {
+	display: none;
+}
+
+#question-three {
+	display: none;
+}
+
+#question-four {
+	display: none;
+}
+
+#question-five {
+	display: none;
+}
+
+.question {
+
+}
+
+.one {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.animate {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	animation-full-mode: both;
+	-webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+.fadeUp {
+	-webkit-animation-name: fadeUp;
+	animation-name: fadeUp;
+}
