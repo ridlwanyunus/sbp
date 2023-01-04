@@ -1,273 +1,373 @@
 <!DOCTYPE html>
-<html 	xmlns:th="http://www.thymeleaf.org" 
-		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-		layout:decorate="~{index.html}"
-		lang="en">
+<html lang="en"
+      layout:decorate="~{index.html}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>SBP Unindra | Inferensi</title>
-	<section layout:fragment="css">
-		<link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/page/inferensi.css" rel="stylesheet" type="text/css" />
-	</section>
+    <meta charset="ISO-8859-1">
+    <title>SBP Unindra | Inferensi</title>
+    <section layout:fragment="css">
+        <link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="./assets/css/page/inferensi.css" rel="stylesheet" type="text/css"/>
+    </section>
 </head>
 <body>
-	<section layout:fragment="content">
-		<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-			<div class="kt-portlet kt-portlet--mobile">
-				<div class="kt-portlet__head kt-portlet__head--lg">
-					<div class="kt-portlet__head-label">
+<section layout:fragment="content">
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+        <div class="kt-portlet kt-portlet--mobile">
+            <div class="kt-portlet__head kt-portlet__head--lg">
+                <div class="kt-portlet__head-label">
 						<span class="kt-portlet__head-icon"> <i
-							class="kt-font-brand fa fa-sitemap"></i>
+                                class="kt-font-brand fa fa-sitemap"></i>
 						</span>
-						<h3 class="kt-portlet__head-title">Inferensi</h3>
-					</div>
-					<div class="kt-portlet__head-toolbar">
-						<div class="kt-portlet__head-wrapper">
-							<div class="kt-portlet__head-actions">
+                    <h3 class="kt-portlet__head-title">Inferensi</h3>
+                </div>
+                <div class="kt-portlet__head-toolbar">
+                    <div class="kt-portlet__head-wrapper">
+                        <div class="kt-portlet__head-actions">
 
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="kt-portlet__body">
-					<div class="row">
-						<div class="col-xl-12">
-						  <!--begin:: Widgets/Activity-->
-						  <div class="kt-portlet kt-portlet--fit kt-portlet--head-lg kt-portlet--head-overlay kt-portlet--skin-solid kt-portlet--height-fluid">
-						    
-						    <div class="kt-portlet__body kt-portlet__body--fit">
-						      <div class="kt-widget17">
-						        <div class="kt-widget17__visual kt-widget17__visual--chart kt-portlet-fit--top kt-portlet-fit--sides" style="background-color: #fd397a">
-						          <div class="kt-widget17__chart" style="height:320px;">
-						            <div class="chartjs-size-monitor">
-						              <div class="chartjs-size-monitor-expand">
-						                <div class=""></div>
-						              </div>
-						              <div class="chartjs-size-monitor-shrink">
-						                <div class=""></div>
-						              </div>
-						            </div>
-						          </div>
-						        </div>
-						        <div class="kt-widget17__stats">
-						          <div id="question-one" class="question one animate">						        	
-							          <div class="kt-widget17__items">
-							            <div class="kt-widget17__item" style="padding: 1rem;">
-							              <span class="kt-widget17__subtitle">Bagaimana kondisi keuangan Anda? </span>
-							            </div>
-							          </div>
-							          <div class="kt-widget17__items">
-							            <div id="miskin" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--warning">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M12.7037037,14 L15.6666667,10 L13.4444444,10 L13.4444444,6 L9,12 L11.2222222,12 L11.2222222,14 L6,14 C5.44771525,14 5,13.5522847 5,13 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,13 C19,13.5522847 18.5522847,14 18,14 L12.7037037,14 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M9.80428954,10.9142091 L9,12 L11.2222222,12 L11.2222222,16 L15.6666667,10 L15.4615385,10 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9.80428954,10.9142091 Z" id="Combined-Shape" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Miskin </span>
-							              <span class="kt-widget17__desc"> 72 Support Cases </span>
-							            </div>
-							            <div id="cukup" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Cukup </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							            <div id="kaya" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Kaya </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							          </div>
-						          </div>
-						          <div id="question-two" class="question one animate">
-							          <div class="kt-widget17__items">
-							            <div class="kt-widget17__item" style="padding: 1rem;">
-							              <span class="kt-widget17__subtitle">Bagaimana sikap Anda terhadap pasangan? </span>
-							            </div>
-							          </div>
-							          <div class="kt-widget17__items">
-							            <div id="cuek" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--warning">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M12.7037037,14 L15.6666667,10 L13.4444444,10 L13.4444444,6 L9,12 L11.2222222,12 L11.2222222,14 L6,14 C5.44771525,14 5,13.5522847 5,13 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,13 C19,13.5522847 18.5522847,14 18,14 L12.7037037,14 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M9.80428954,10.9142091 L9,12 L11.2222222,12 L11.2222222,16 L15.6666667,10 L15.4615385,10 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9.80428954,10.9142091 Z" id="Combined-Shape" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Cuek </span>
-							              <span class="kt-widget17__desc"> 72 Support Cases </span>
-							            </div>
-							            <div id="perhatian" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Perhatian </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							          </div>
-						          </div>
-						          <div id="question-three" class="question one animate">
-							          <div class="kt-widget17__items">
-							            <div class="kt-widget17__item" style="padding: 1rem;">
-							              <span class="kt-widget17__subtitle">Bagaimana komunikasi Anda terhadap pasangan selama ini? </span>
-							            </div>
-							          </div>
-							          <div class="kt-widget17__items">
-							            <div id="nyambung" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--warning">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M12.7037037,14 L15.6666667,10 L13.4444444,10 L13.4444444,6 L9,12 L11.2222222,12 L11.2222222,14 L6,14 C5.44771525,14 5,13.5522847 5,13 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,13 C19,13.5522847 18.5522847,14 18,14 L12.7037037,14 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M9.80428954,10.9142091 L9,12 L11.2222222,12 L11.2222222,16 L15.6666667,10 L15.4615385,10 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9.80428954,10.9142091 Z" id="Combined-Shape" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Nyambung </span>
-							              <span class="kt-widget17__desc"> 72 Support Cases </span>
-							            </div>
-							            <div id="tidakNyambung" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Tidak Nyambung </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							          </div>
-						          </div>
-						          <div id="question-four" class="question one animate">
-							          <div class="kt-widget17__items">
-							            <div class="kt-widget17__item" style="padding: 1rem;">
-							              <span class="kt-widget17__subtitle">Termasuk dalam kategori apakah Anda menurut perspektif diri sendiri? </span>
-							            </div>
-							          </div>
-							          <div class="kt-widget17__items">
-							            <div id="cerdas" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--warning">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M12.7037037,14 L15.6666667,10 L13.4444444,10 L13.4444444,6 L9,12 L11.2222222,12 L11.2222222,14 L6,14 C5.44771525,14 5,13.5522847 5,13 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,13 C19,13.5522847 18.5522847,14 18,14 L12.7037037,14 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M9.80428954,10.9142091 L9,12 L11.2222222,12 L11.2222222,16 L15.6666667,10 L15.4615385,10 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9.80428954,10.9142091 Z" id="Combined-Shape" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Cerdas </span>
-							              <span class="kt-widget17__desc"> 72 Support Cases </span>
-							            </div>
-							            <div id="pintar" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Pintar </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							            <div id="sedang" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Sedang </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							          </div>
-						          </div>
-						          <div id="question-five" class="question one animate">
-							          <div class="kt-widget17__items">
-							            <div class="kt-widget17__item" style="padding: 1rem;">
-							              <span class="kt-widget17__subtitle">Apakah Anda termasuk orang yang humoris atau serius? </span>
-							            </div>
-							          </div>
-							          <div class="kt-widget17__items">
-							            <div id="lucu" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--warning">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M12.7037037,14 L15.6666667,10 L13.4444444,10 L13.4444444,6 L9,12 L11.2222222,12 L11.2222222,14 L6,14 C5.44771525,14 5,13.5522847 5,13 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,13 C19,13.5522847 18.5522847,14 18,14 L12.7037037,14 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M9.80428954,10.9142091 L9,12 L11.2222222,12 L11.2222222,16 L15.6666667,10 L15.4615385,10 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9.80428954,10.9142091 Z" id="Combined-Shape" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle">Lucu</span>
-							              <span class="kt-widget17__desc"> 72 Support Cases </span>
-							            </div>
-							            <div id="serius" class="kt-widget17__item">
-							              <span class="kt-widget17__icon">
-							                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--danger">
-							                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-							                    <path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" id="Combined-Shape" fill="#000000" opacity="0.3"></path>
-							                    <path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" id="Rectangle-102-Copy" fill="#000000"></path>
-							                  </g>
-							                </svg>
-							              </span>
-							              <span class="kt-widget17__subtitle"> Serius </span>
-							              <span class="kt-widget17__desc"> 34 Upgraded Boxes </span>
-							            </div>
-							          </div>
-						          </div>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
-						  <!--end:: Widgets/Activity-->
-						</div>
-					</div>			
-				</div>
-			</div>
-		</div>
-	</section>
-	<section layout:fragment="javascript">
-		<!--begin::Page Vendors(used by this page) -->
-		<script src="./assets/js/demo1/pages/inferensi.js" type="text/javascript"></script>
-		<!--begin::Page Vendors(used by this page) -->
-		<script src="./assets/js/demo1/pages/dashboard.js" type="text/javascript"></script>
-	</section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kt-portlet__body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <!--begin:: Widgets/Activity-->
+                        <div class="kt-portlet kt-portlet--fit kt-portlet--head-lg kt-portlet--head-overlay kt-portlet--skin-solid kt-portlet--height-fluid">
+
+                            <div class="kt-portlet__body kt-portlet__body--fit">
+                                <div class="kt-widget17" style="background-image: url('./assets/media/logos/Wallpaper2.png'); background-size: 100%,100%">
+                                    <div class="kt-widget17__visual kt-widget17__visual--chart kt-portlet-fit--top kt-portlet-fit--sides">
+                                        <div class="kt-widget17__chart" style="height:320px;">
+                                            <div class="chartjs-size-monitor">
+                                                <div class="chartjs-size-monitor-expand">
+                                                    <div class=""></div>
+                                                </div>
+                                                <div class="chartjs-size-monitor-shrink">
+                                                    <div class=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kt-widget17__stats">
+                                        <div class="question one animate" id="question-one">
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" style="padding: 1rem;">
+                                                    <span class="kt-widget17__subtitle">Bagaimana kondisi keuangan Anda? </span>
+                                                </div>
+                                            </div>
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" id="berlebih">
+                                                    <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                            height="24px"
+                                                            version="1.1" viewBox="0 0 24 24"
+                                                            width="24px" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <circle cx="20.5" cy="12.5" fill="#000000" opacity="0.3" r="1.5"/>
+        <rect fill="#000000" height="7"
+              opacity="0.3" rx="1"
+              transform="translate(12.000000, 6.500000) rotate(-15.000000) translate(-12.000000, -6.500000) " width="18"
+              x="3" y="3"/>
+        <path d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z"
+              fill="#000000"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Berlebih </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="cukup">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <circle cx="20.5" cy="12.5" fill="#000000" opacity="0.3" r="1.5"/>
+        <rect fill="#000000" height="7"
+              opacity="0.3" rx="1"
+              transform="translate(12.000000, 6.500000) rotate(-15.000000) translate(-12.000000, -6.500000) " width="18"
+              x="3" y="3"/>
+        <path d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z"
+              fill="#000000"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Cukup </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="kurang">
+							             <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                 height="24px"
+                                                 version="1.1" viewBox="0 0 24 24" width="24px"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <circle cx="20.5" cy="12.5" fill="#000000" opacity="0.3" r="1.5"/>
+        <rect fill="#000000" height="7"
+              opacity="0.3" rx="1"
+              transform="translate(12.000000, 6.500000) rotate(-15.000000) translate(-12.000000, -6.500000) " width="18"
+              x="3" y="3"/>
+        <path d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z"
+              fill="#000000"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Kurang </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question one animate" id="question-two">
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" style="padding: 1rem;">
+                                                    <span class="kt-widget17__subtitle">Bagaimana sikap Pasangan Anda terhadap Anda? </span>
+                                                </div>
+                                            </div>
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" id="perhatian">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z"
+              fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Perhatian </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="cuek">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z"
+              fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Cuek </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="romantis">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z"
+              fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Romantis </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question one animate" id="question-three">
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" style="padding: 1rem;">
+                                                    <span class="kt-widget17__subtitle">Bagaimana komunikasi Anda terhadap pasangan selama ini? </span>
+                                                </div>
+                                            </div>
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" id="terbuka">
+							             <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                 height="24px"
+                                                 version="1.1" viewBox="0 0 24 24" width="24px"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <path d="M13.0799676,14.7839934 L15.2839934,12.5799676 C15.8927139,11.9712471 16.0436229,11.0413042 15.6586342,10.2713269 L15.5337539,10.0215663 C15.1487653,9.25158901 15.2996742,8.3216461 15.9083948,7.71292558 L18.6411989,4.98012149 C18.836461,4.78485934 19.1530435,4.78485934 19.3483056,4.98012149 C19.3863063,5.01812215 19.4179321,5.06200062 19.4419658,5.11006808 L20.5459415,7.31801948 C21.3904962,9.0071287 21.0594452,11.0471565 19.7240871,12.3825146 L13.7252616,18.3813401 C12.2717221,19.8348796 10.1217008,20.3424308 8.17157288,19.6923882 L5.75709327,18.8875616 C5.49512161,18.8002377 5.35354162,18.5170777 5.4408655,18.2551061 C5.46541191,18.1814669 5.50676633,18.114554 5.56165376,18.0596666 L8.21292558,15.4083948 C8.8216461,14.7996742 9.75158901,14.6487653 10.5215663,15.0337539 L10.7713269,15.1586342 C11.5413042,15.5436229 12.4712471,15.3927139 13.0799676,14.7839934 Z"
+              fill="#000000"/>
+        <path d="M14.1480759,6.00715131 L13.9566988,7.99797396 C12.4781389,7.8558405 11.0097207,8.36895892 9.93933983,9.43933983 C8.8724631,10.5062166 8.35911588,11.9685602 8.49664195,13.4426352 L6.50528978,13.6284215 C6.31304559,11.5678496 7.03283934,9.51741319 8.52512627,8.02512627 C10.0223249,6.52792766 12.0812426,5.80846733 14.1480759,6.00715131 Z M14.4980938,2.02230302 L14.313049,4.01372424 C11.6618299,3.76737046 9.03000738,4.69181803 7.1109127,6.6109127 C5.19447112,8.52735429 4.26985715,11.1545872 4.51274152,13.802405 L2.52110319,13.985098 C2.22450978,10.7517681 3.35562581,7.53777247 5.69669914,5.19669914 C8.04101739,2.85238089 11.2606138,1.72147333 14.4980938,2.02230302 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Terbuka </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="reponsif">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <path d="M13.0799676,14.7839934 L15.2839934,12.5799676 C15.8927139,11.9712471 16.0436229,11.0413042 15.6586342,10.2713269 L15.5337539,10.0215663 C15.1487653,9.25158901 15.2996742,8.3216461 15.9083948,7.71292558 L18.6411989,4.98012149 C18.836461,4.78485934 19.1530435,4.78485934 19.3483056,4.98012149 C19.3863063,5.01812215 19.4179321,5.06200062 19.4419658,5.11006808 L20.5459415,7.31801948 C21.3904962,9.0071287 21.0594452,11.0471565 19.7240871,12.3825146 L13.7252616,18.3813401 C12.2717221,19.8348796 10.1217008,20.3424308 8.17157288,19.6923882 L5.75709327,18.8875616 C5.49512161,18.8002377 5.35354162,18.5170777 5.4408655,18.2551061 C5.46541191,18.1814669 5.50676633,18.114554 5.56165376,18.0596666 L8.21292558,15.4083948 C8.8216461,14.7996742 9.75158901,14.6487653 10.5215663,15.0337539 L10.7713269,15.1586342 C11.5413042,15.5436229 12.4712471,15.3927139 13.0799676,14.7839934 Z"
+              fill="#000000"/>
+        <path d="M14.1480759,6.00715131 L13.9566988,7.99797396 C12.4781389,7.8558405 11.0097207,8.36895892 9.93933983,9.43933983 C8.8724631,10.5062166 8.35911588,11.9685602 8.49664195,13.4426352 L6.50528978,13.6284215 C6.31304559,11.5678496 7.03283934,9.51741319 8.52512627,8.02512627 C10.0223249,6.52792766 12.0812426,5.80846733 14.1480759,6.00715131 Z M14.4980938,2.02230302 L14.313049,4.01372424 C11.6618299,3.76737046 9.03000738,4.69181803 7.1109127,6.6109127 C5.19447112,8.52735429 4.26985715,11.1545872 4.51274152,13.802405 L2.52110319,13.985098 C2.22450978,10.7517681 3.35562581,7.53777247 5.69669914,5.19669914 C8.04101739,2.85238089 11.2606138,1.72147333 14.4980938,2.02230302 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Responsif </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="pendengar">
+							          <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                              height="24px"
+                                              version="1.1" viewBox="0 0 24 24" width="24px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <path d="M13.0799676,14.7839934 L15.2839934,12.5799676 C15.8927139,11.9712471 16.0436229,11.0413042 15.6586342,10.2713269 L15.5337539,10.0215663 C15.1487653,9.25158901 15.2996742,8.3216461 15.9083948,7.71292558 L18.6411989,4.98012149 C18.836461,4.78485934 19.1530435,4.78485934 19.3483056,4.98012149 C19.3863063,5.01812215 19.4179321,5.06200062 19.4419658,5.11006808 L20.5459415,7.31801948 C21.3904962,9.0071287 21.0594452,11.0471565 19.7240871,12.3825146 L13.7252616,18.3813401 C12.2717221,19.8348796 10.1217008,20.3424308 8.17157288,19.6923882 L5.75709327,18.8875616 C5.49512161,18.8002377 5.35354162,18.5170777 5.4408655,18.2551061 C5.46541191,18.1814669 5.50676633,18.114554 5.56165376,18.0596666 L8.21292558,15.4083948 C8.8216461,14.7996742 9.75158901,14.6487653 10.5215663,15.0337539 L10.7713269,15.1586342 C11.5413042,15.5436229 12.4712471,15.3927139 13.0799676,14.7839934 Z"
+              fill="#000000"/>
+        <path d="M14.1480759,6.00715131 L13.9566988,7.99797396 C12.4781389,7.8558405 11.0097207,8.36895892 9.93933983,9.43933983 C8.8724631,10.5062166 8.35911588,11.9685602 8.49664195,13.4426352 L6.50528978,13.6284215 C6.31304559,11.5678496 7.03283934,9.51741319 8.52512627,8.02512627 C10.0223249,6.52792766 12.0812426,5.80846733 14.1480759,6.00715131 Z M14.4980938,2.02230302 L14.313049,4.01372424 C11.6618299,3.76737046 9.03000738,4.69181803 7.1109127,6.6109127 C5.19447112,8.52735429 4.26985715,11.1545872 4.51274152,13.802405 L2.52110319,13.985098 C2.22450978,10.7517681 3.35562581,7.53777247 5.69669914,5.19669914 C8.04101739,2.85238089 11.2606138,1.72147333 14.4980938,2.02230302 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Pendengar yang Baik </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="satuArah">
+							             <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                 height="24px"
+                                                 version="1.1" viewBox="0 0 24 24" width="24px"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <path d="M13.0799676,14.7839934 L15.2839934,12.5799676 C15.8927139,11.9712471 16.0436229,11.0413042 15.6586342,10.2713269 L15.5337539,10.0215663 C15.1487653,9.25158901 15.2996742,8.3216461 15.9083948,7.71292558 L18.6411989,4.98012149 C18.836461,4.78485934 19.1530435,4.78485934 19.3483056,4.98012149 C19.3863063,5.01812215 19.4179321,5.06200062 19.4419658,5.11006808 L20.5459415,7.31801948 C21.3904962,9.0071287 21.0594452,11.0471565 19.7240871,12.3825146 L13.7252616,18.3813401 C12.2717221,19.8348796 10.1217008,20.3424308 8.17157288,19.6923882 L5.75709327,18.8875616 C5.49512161,18.8002377 5.35354162,18.5170777 5.4408655,18.2551061 C5.46541191,18.1814669 5.50676633,18.114554 5.56165376,18.0596666 L8.21292558,15.4083948 C8.8216461,14.7996742 9.75158901,14.6487653 10.5215663,15.0337539 L10.7713269,15.1586342 C11.5413042,15.5436229 12.4712471,15.3927139 13.0799676,14.7839934 Z"
+              fill="#000000"/>
+        <path d="M14.1480759,6.00715131 L13.9566988,7.99797396 C12.4781389,7.8558405 11.0097207,8.36895892 9.93933983,9.43933983 C8.8724631,10.5062166 8.35911588,11.9685602 8.49664195,13.4426352 L6.50528978,13.6284215 C6.31304559,11.5678496 7.03283934,9.51741319 8.52512627,8.02512627 C10.0223249,6.52792766 12.0812426,5.80846733 14.1480759,6.00715131 Z M14.4980938,2.02230302 L14.313049,4.01372424 C11.6618299,3.76737046 9.03000738,4.69181803 7.1109127,6.6109127 C5.19447112,8.52735429 4.26985715,11.1545872 4.51274152,13.802405 L2.52110319,13.985098 C2.22450978,10.7517681 3.35562581,7.53777247 5.69669914,5.19669914 C8.04101739,2.85238089 11.2606138,1.72147333 14.4980938,2.02230302 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Hanya 1 Arah </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question one animate" id="question-four">
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" style="padding: 1rem;">
+                                                    <span class="kt-widget17__subtitle">Termasuk dalam kategori apakah Pasangan Anda menurut perspektif diri sendiri? </span>
+                                                </div>
+                                            </div>
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" id="berprestasi">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+              fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Berprestasi </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="explor">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+              fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Suka Explorasi </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="kurangExplorasi">
+							              <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                  height="24px"
+                                                  version="1.1" viewBox="0 0 24 24" width="24px"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+              fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+              fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg></span>
+                                                    <span class="kt-widget17__subtitle"> Kurang Explorasi </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question one animate" id="question-five">
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" style="padding: 1rem;">
+                                                    <span class="kt-widget17__subtitle">Apakah Anda termasuk orang yang humoris atau serius? </span>
+                                                </div>
+                                            </div>
+                                            <div class="kt-widget17__items">
+                                                <div class="kt-widget17__item" id="lucu">
+							             <span class="svg-icon svg-icon-primary svg-icon-2x"><svg
+                                                 height="24px"
+                                                 version="1.1" viewBox="0 0 24 24" width="24px"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <rect fill="#000000" height="20" opacity="0.3" rx="10" width="20" x="2" y="2"/>
+        <path d="M6.16794971,14.5547002 C5.86159725,14.0951715 5.98577112,13.4743022 6.4452998,13.1679497 C6.90482849,12.8615972 7.52569784,12.9857711 7.83205029,13.4452998 C8.9890854,15.1808525 10.3543313,16 12,16 C13.6456687,16 15.0109146,15.1808525 16.1679497,13.4452998 C16.4743022,12.9857711 17.0951715,12.8615972 17.5547002,13.1679497 C18.0142289,13.4743022 18.1384028,14.0951715 17.8320503,14.5547002 C16.3224187,16.8191475 14.3543313,18 12,18 C9.64566871,18 7.67758127,16.8191475 6.16794971,14.5547002 Z"
+              fill="#000000"/>
+    </g>
+</svg><!--end::Svg Icon--></span>
+                                                    <span class="kt-widget17__subtitle">Lucu</span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="serius">
+							         <span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo4/dist/../src/media/svg/icons/General/Smile.svg--><svg
+                                             height="24px"
+                                             version="1.1" viewBox="0 0 24 24" width="24px"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <rect fill="#000000" height="20" opacity="0.3" rx="10" width="20" x="2" y="2"/>
+        <path d="M6.16794971,14.5547002 C5.86159725,14.0951715 5.98577112,13.4743022 6.4452998,13.1679497 C6.90482849,12.8615972 7.52569784,12.9857711 7.83205029,13.4452998 C8.9890854,15.1808525 10.3543313,16 12,16 C13.6456687,16 15.0109146,15.1808525 16.1679497,13.4452998 C16.4743022,12.9857711 17.0951715,12.8615972 17.5547002,13.1679497 C18.0142289,13.4743022 18.1384028,14.0951715 17.8320503,14.5547002 C16.3224187,16.8191475 14.3543313,18 12,18 C9.64566871,18 7.67758127,16.8191475 6.16794971,14.5547002 Z"
+              fill="#000000"/>
+    </g>
+</svg><!--end::Svg Icon--></span>
+                                                    <span class="kt-widget17__subtitle"> Serius </span>
+                                                </div>
+                                                <div class="kt-widget17__item" id="receh">
+							            <span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo4/dist/../src/media/svg/icons/General/Smile.svg--><svg
+                                                height="24px"
+                                                version="1.1" viewBox="0 0 24 24" width="24px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <rect height="24" width="24" x="0" y="0"/>
+        <rect fill="#000000" height="20" opacity="0.3" rx="10" width="20" x="2" y="2"/>
+        <path d="M6.16794971,14.5547002 C5.86159725,14.0951715 5.98577112,13.4743022 6.4452998,13.1679497 C6.90482849,12.8615972 7.52569784,12.9857711 7.83205029,13.4452998 C8.9890854,15.1808525 10.3543313,16 12,16 C13.6456687,16 15.0109146,15.1808525 16.1679497,13.4452998 C16.4743022,12.9857711 17.0951715,12.8615972 17.5547002,13.1679497 C18.0142289,13.4743022 18.1384028,14.0951715 17.8320503,14.5547002 C16.3224187,16.8191475 14.3543313,18 12,18 C9.64566871,18 7.67758127,16.8191475 6.16794971,14.5547002 Z"
+              fill="#000000"/>
+    </g>
+</svg><!--end::Svg Icon--></span>
+                                                    <span class="kt-widget17__subtitle"> Receh </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end:: Widgets/Activity-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section layout:fragment="javascript">
+    <!--begin::Page Vendors(used by this page) -->
+    <script src="./assets/js/demo1/pages/inferensi.js" type="text/javascript"></script>
+    <!--begin::Page Vendors(used by this page) -->
+    <script src="./assets/js/demo1/pages/dashboard.js" type="text/javascript"></script>
+</section>
 </body>
 </html>

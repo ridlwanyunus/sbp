@@ -12,8 +12,8 @@
  	}
  	
  	var buttonHandler = function () {
-		$('#miskin').on('click', function(){
-			param.keuangan = 'Miskin';
+		$('#berlebih').on('click', function(){
+			param.keuangan = 'Berlebih';
 			questionOneOut();
 			questionTwo();
 			
@@ -24,51 +24,67 @@
 			questionTwo();
 			
 		});
-		$('#kaya').on('click', function(){
-			param.keuangan = 'Kaya';
+		$('#kurang').on('click', function(){
+			param.keuangan = 'Kurang';
 			questionOneOut();
 			questionTwo();
 			
 		});
 		
 		// Question 2
-		$('#cuek').on('click', function(){
-			param.sikap = 'Cuek';
-			questionTwoOut();
-			questionThree();
-		});
 		$('#perhatian').on('click', function(){
 			param.sikap = 'Perhatian';
 			questionTwoOut();
 			questionThree();
 		});
-		
+		$('#cuek').on('click', function(){
+			param.sikap = 'Cuek';
+			questionTwoOut();
+			questionThree();
+		});
+		$('#romantis').on('click', function(){
+			param.sikap = 'Romantis';
+			questionTwoOut();
+			questionThree();
+		});
+
+
 		// Question 3
-		$('#nyambung').on('click', function(){
-			param.komunikasi = 'Nyambung';
+		$('#terbuka').on('click', function(){
+			param.komunikasi = 'Terbuka';
 			questionThreeOut();
 			questionFour();
 		});
-		$('#tidakNyambung').on('click', function(){
-			param.komunikasi = 'Tidak Nyambung';
+		$('#reponsif').on('click', function(){
+			param.komunikasi = 'Responsif';
+			questionThreeOut();
+			questionFour();
+		});
+		$('#pendengar').on('click', function(){
+			param.komunikasi = 'Pendengar yang Baik';
+			questionThreeOut();
+			questionFour();
+		});
+		$('#satuArah').on('click', function(){
+			param.komunikasi = 'Hanya 1 Arah';
 			questionThreeOut();
 			questionFour();
 		});
 		
 		
 		// Question 4
-		$('#cerdas').on('click', function(){
-			param.kecerdasan = 'Cerdas';
+		$('#berprestasi').on('click', function(){
+			param.kecerdasan = 'Beprestasi';
 			questionFourOut();
 			questionFive();
 		});
-		$('#pintar').on('click', function(){
-			param.kecerdasan = 'Pintar';
+		$('#explor').on('click', function(){
+			param.kecerdasan = 'Suka Explorasi';
 			questionFourOut();
 			questionFive();
 		});
-		$('#sedang').on('click', function(){
-			param.kecerdasan = 'Sedang';
+		$('#kurangExplorasi').on('click', function(){
+			param.kecerdasan = 'Kurang Explorasi';
 			questionFourOut();
 			questionFive();
 		});
@@ -82,6 +98,12 @@
 		});
 		$('#serius').on('click', function(){
 			param.humoris = 'Serius';
+			questionFiveOut();
+			console.log(param);
+			predict(param);
+		});
+		$('#receh').on('click', function(){
+			param.humoris = 'Receh';
 			questionFiveOut();
 			console.log(param);
 			predict(param);
