@@ -51,7 +51,7 @@
  								
  							return `
  							<a class="btn btn-sm btn-clean btn-icon btn-icon-md btn-ubah" data-id="`+full.idDataset+`"  title="Edit">
-	                          <i class="la la-edit"></i>
+	                        <i class="la la-edit"></i>
 	                        </a>
  							<a class="btn btn-sm btn-clean btn-icon btn-icon-md btn-hapus" data-id="`+full.idDataset+`" title="Hapus">
 	                          <i class="la la-trash"></i>
