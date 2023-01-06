@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="kt-portlet__body">
+			<div class="kt-portlet__body flex-fill">
 				<div class="row">
 					<div class="col-xl-12">
 
@@ -41,7 +41,7 @@
 							<div class="kt-widget14">
 								<div class="kt-widget14__header kt-margin-b-30">
 									<h3 class="kt-portlet__head-title">
-										Selamat Datang di Aplikasi Sistem Pakar untuk Menentukan Pasangan Idaman dengan Algoritma ID3
+										Selamat Datang di Aplikasi Sistem Pakar untuk Menentukan Pasangan Idaman dengan Metode Inferensi Forward Chaining dengan Menggunakan Algoritma ID3
 									</h3>
 									<br><br>
 									<div class="kt-widget2__title">
@@ -75,10 +75,51 @@
 							<div class="kt-widget14">
 								<div class="kt-widget14__header kt-margin-b-30">
 									<h3 class="kt-portlet__head-title">
-										Ingin tau "Algoritma ID3?"
+										Ingin tau "Metode Forward Chaining dan Algoritma ID3 ?"
 									</h3><br><br>
 									<div class="kt-widget2">
 										<div class="kt-widget2__item kt-widget2__item--success">
+											<div class="kt-widget2__checkbox">
+											</div>
+											<div class="kt-widget2__info">
+												<h2 class="kt-widget14__title">
+													Algoritma Forward Chaining
+												</h2>
+												<span class="kt-widget14__desc">
+													merupakan metode yang digunakan dalam sistem pakar dengan menggunakan sistem pelacakan ke depan,
+													dimulai dari sekumpulan fakta dan berakhir di kesimpulan.
+												</span>
+											</div>
+										</div>
+										<div class="kt-widget2__item kt-widget2__item--warning">
+											<div class="kt-widget2__checkbox">
+											</div>
+											<div class="kt-widget2__info">
+												<h4 class="kt-widget14__title">
+													Langkah kerja metode Forward Chaining, sebagai berikut:
+												</h4>
+												<span class="kt-widget14__desc">
+													<ol>
+														<li>Catat semua fakta yang diinput oleh user, </li>
+														<li>Catat semua rule yang bagian premisnya menggunakan fakta yang sesuai ke dalam Queque Q, </li>
+														<li>Sampai tidak ada rule pada Q,</li>
+														<ul>
+															<li>Analisis rule pertama pada Q</li>
+															<li>Jika premis tidak terpenuhi, hapus rule dari Q dan kembali ke a</li>
+															<li>Jika premis terpenuhi</li>
+															<ol>
+																<li>Eksekusi Rule, catat konklusi dari rule</li>
+																<li>Cari Rule yang menggunakan konklusi tersebut sebagai premis</li>
+																<li>Jika rule belum ada pada Q, catat rule tersebut meskipun premis tidak sepenuhnya terpenuhi</li>
+																<li>Hapus rule awal dari Q</li>
+															</ol>
+														</ul>
+														<li>Konklusi Akhir diperoleh</li>
+													</ol>
+												</span>
+											</div>
+										</div>
+										<div class="kt-widget2__item kt-widget2__item--danger">
 											<div class="kt-widget2__checkbox">
 											</div>
 											<div class="kt-widget2__info">
@@ -90,7 +131,7 @@
 												</span>
 											</div>
 										</div>
-										<div class="kt-widget2__item kt-widget2__item--warning">
+										<div class="kt-widget2__item kt-widget2__item--brand">
 											<div class="kt-widget2__checkbox">
 											</div>
 											<div class="kt-widget2__info">
@@ -106,7 +147,7 @@
 												</span>
 											</div>
 										</div>
-										<div class="kt-widget2__item kt-widget2__item--brand">
+										<div class="kt-widget2__item kt-widget2__item--success">
 											<div class="kt-widget2__checkbox">
 											</div>
 											<div class="kt-widget2__info">
